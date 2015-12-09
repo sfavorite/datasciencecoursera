@@ -1,0 +1,5 @@
+library(caret)
+#download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv", destfile="train_data.csv", method = "curl")
+train.data <- read.csv("train_data.csv")
+#download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv", destfile="test_data.csv", method = "curl")
+test.data <- read.csv("test_data.csv")
