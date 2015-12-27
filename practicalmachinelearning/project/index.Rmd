@@ -24,8 +24,7 @@ download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.c
 testing <- read.csv("test_data.csv")
 library(doParallel)
 require(doParallel)
-detected <- detectCores()
-c1 <- makeCluster(detected)
+c1 <- makeCluster(8)
 registerDoParallel(c1)
 set.seed(32323)
 ```
