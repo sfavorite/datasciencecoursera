@@ -118,7 +118,8 @@ Out-of-sample error: `r 1-accuracy[1]`
 ```
 ## Predicting testing set
 ```{r}
-predict(modelRF, newdata=testing)
+predictions <- predict(modelRF, newdata=testing)
+predictions
 ```
 
 ## Appendix A - Data Citation
